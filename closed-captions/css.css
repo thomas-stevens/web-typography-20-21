@@ -29,7 +29,9 @@ Feel free to adjust the defaults to your needs.
 	display: block;
 	font-size: 2em;
 	font-family: "brenner sans";
+	transform: translate(-50%);
 }
+
 #closed-captions .on {
 	opacity: 1;
 }
