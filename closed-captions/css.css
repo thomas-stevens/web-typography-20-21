@@ -1,6 +1,5 @@
 body{
-	background: rgb(2,0,36);
-	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 100%);
+	background-color: #000;
 	transition: 3s;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -25,9 +24,9 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
-	color: #fff;
+	/* color: #fff; */
 	display: block;
-	font-size: 2em;
+	/* font-size: 2em; */
 	font-family: "brenner sans";
 	transform: translate(-50%);
 }
@@ -40,7 +39,22 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
+	color: #fff;
+	font-size: 2em;
+}
+.voice2 {
+	color: yellow;
+	font-size: 2em;
+}
+.voice3 {
 	font-style: italic;
+	color: red;
+	font-weight: 900;
+	font-size: 3.5em;
+	transform: skewY(25deg);
+}
+.voice4 {
+	font-size: 2em;
 }
 
 /* **********************************************
@@ -134,22 +148,62 @@ Sounds.
 *********************************************  */
 
 .sound0 {
-	background: rgb(2,0,36);
-	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 100%);
-	transition: 1s;
-	transition-timing-function: ease;
+	/* background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 100%); */
 }
 
 .sound1 {
-	background: rgb(2,0,36);
-	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 50%, rgba(0,26,255,1) 100%);
-	transition: background 2s ease-out;
-	/* transition-timing-function: ease-in-out;
-	transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); */
+	animation-name: alarm;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	/* animation-iteration-count: infinite; */
+	/* animation-play-state: running; */
+}
+
+.sound1 iframe {
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
 }
 
 iframe {
 	transition: 1s;
 	display: flex;
 	align-self: center;
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-15px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(15px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(30px, 0, 0);
+  }
+}
+
+@keyframes alarm {
+    0%  {
+			background-color:red;
+		}
+
+    50.0%  {
+			background-color:blue;
+		}
+
+    80.0%  {
+			background-color:red;
+		}
+
+		100.0%  {
+			background-color:#000;
+		}
 }
