@@ -1,5 +1,5 @@
 body{
-	background-color: #000;
+	background-color: #111;
 	transition: 3s;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -15,6 +15,7 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+
 #closed-captions{
 	align-self: center;
 	/* margin-right: 250px; */
@@ -51,7 +52,7 @@ Feel free to adjust the defaults to your needs.
 	color: red;
 	font-weight: 900;
 	font-size: 3.5em;
-	transform: skewY(25deg);
+	/* transform: skewY(25deg); */
 }
 .voice4 {
 	font-size: 2em;
@@ -169,6 +170,36 @@ iframe {
 	transition: 1s;
 	display: flex;
 	align-self: center;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+	z-index: -10;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
 }
 
 
