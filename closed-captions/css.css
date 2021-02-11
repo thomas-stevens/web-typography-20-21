@@ -45,16 +45,18 @@ Feel free to adjust the defaults to your needs.
 }
 .voice2 {
 	color: yellow;
+	font-style: italic;
 	font-size: 2em;
 }
 .voice3 {
-	font-style: italic;
 	color: red;
 	font-weight: 900;
-	font-size: 3.5em;
+	font-size: 2em;
 	/* transform: skewY(25deg); */
 }
 .voice4 {
+	color: green;
+	font-style: italic;
 	font-size: 2em;
 }
 
@@ -67,7 +69,7 @@ The first paragraph, with extended timing for
 You probably want to change the styling.
 ********************************************** */
 
-.p0 span {
+/* .p0 span {
 	opacity: 0;
 	font-family: brenner;
 }
@@ -139,6 +141,34 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s 3.7s;
 	font-family: "brenner sans";
+} */
+
+.p0.on span:nth-of-type(2) {
+	margin-right: -.25em;
+	font-weight: 800;
+}
+.p0.on span:nth-of-type(3) {
+	margin-right: -.25em;
+	font-weight: 800;
+}
+.p0.on span:nth-of-type(4) {
+	margin-right: -.25em;
+	font-weight: 800;
+}
+.p0.on span:nth-of-type(5) {
+	margin-right: -.25em;
+	font-weight: 800;
+}
+.p0.on span:nth-of-type(6) {
+	margin-right: -.25em;
+	font-weight: 800;
+}
+.p0.on span:nth-of-type(7) {
+	margin-right: -.25em;
+	font-weight: 800;
+}
+.p0.on span:nth-of-type(8) {
+	font-weight: 800;
 }
 
 /* **********************************************
@@ -155,15 +185,62 @@ Sounds.
 
 .sound1 {
 	animation-name: alarm;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-timing-function: ease-in-out;
-	/* animation-iteration-count: infinite; */
-	/* animation-play-state: running; */
 }
 
 .sound1 iframe {
 	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 	transform: translate3d(0, 0, 0);
+}
+
+.sound2 {
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+}
+
+.sound3 iframe{
+	animation-name: lift;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+.sound4{
+	animation-name: liftcolor;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+.sound5 iframe{
+	animation-name: lift-2;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+.sound6{
+	animation-name: liftcolor-2;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+.sound7 iframe{
+	animation-name: lift-3;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+.sound8{
+	animation-name: liftcolor-3;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+.sound9 iframe{
+	animation-name: grow;
+	animation-duration: 42s;
+	animation-timing-function: ease-out;
+	overflow: hidden;
 }
 
 iframe {
@@ -221,6 +298,99 @@ iframe {
   }
 }
 
+@keyframes lift {
+	0%  {
+		transform: translate3d(0, -20px, 0);
+		background-color: #3a4e48;
+	}
+
+	70.0%  {
+		transform: translate3d(0, -80px, 0);
+		background-color:#1A2320;
+	}
+
+	100.0%  {
+		transform: translate3d(0, 0, 0);
+		background-color:#111;
+	}
+}
+
+@keyframes liftcolor {
+	0%  {
+		background-color: #3a4e48;
+	}
+
+	70.0%  {
+		background-color: #1A2320;
+	}
+
+	100.0%  {
+		background-color: #111;
+	}
+}
+
+@keyframes lift-2 {
+	0%  {
+		transform: translate3d(0, -20px, 0);
+		background-color: #3a4e48;
+	}
+
+	70.0%  {
+		transform: translate3d(0, -80px, 0);
+		background-color:#1A2320;
+	}
+
+	100.0%  {
+		transform: translate3d(0, 0, 0);
+		background-color:#111;
+	}
+}
+
+@keyframes liftcolor-2 {
+	0%  {
+		background-color: #3a4e48;
+	}
+
+	70.0%  {
+		background-color: #1A2320;
+	}
+
+	100.0%  {
+		background-color: #111;
+	}
+}
+
+@keyframes lift-3 {
+	0%  {
+		transform: translate3d(0, -20px, 0);
+		/* background-color: #3a4e48; */
+	}
+
+	70.0%  {
+		transform: translate3d(0, -80px, 0);
+		/* background-color:#1A2320; */
+	}
+
+	100.0%  {
+		transform: translate3d(0, 0, 0);
+		/* background-color:#111; */
+	}
+}
+
+@keyframes liftcolor-3 {
+	0%  {
+		background-color: #3a4e48;
+	}
+
+	70.0%  {
+		background-color: #1A2320;
+	}
+
+	100.0%  {
+		background-color: #111;
+	}
+}
+
 @keyframes alarm {
     0%  {
 			background-color:red;
@@ -230,11 +400,35 @@ iframe {
 			background-color:blue;
 		}
 
-    80.0%  {
+		100.0%  {
+			background-color:#111;
+		}
+}
+
+@keyframes pulse {
+    0%  {
+			background-color:#111;
+		}
+
+		70.0%  {
 			background-color:red;
 		}
 
 		100.0%  {
-			background-color:#000;
+			background-color:#111;
+		}
+}
+
+@keyframes grow {
+    0%  {
+			transform: scale(1);
+		}
+
+		95%  {
+			transform: scale(3);
+		}
+
+		100%  {
+			transform: scale(1);
 		}
 }
