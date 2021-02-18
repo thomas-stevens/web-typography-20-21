@@ -44,6 +44,7 @@ Feel free to adjust the defaults to your needs.
 	font-size: 1.7em;
 	font-family: "brenner mono";
 	letter-spacing: -1px;
+	font-style: italic;
 }
 
 .voice2 {
@@ -153,11 +154,21 @@ Sounds.
 	transform: translate3d(0, 0, 0);
 }
 
+/* .sound1 .alarm-1{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
+
 .sound2 {
 	animation-name: pulse;
 	animation-duration: 1.5s;
 	animation-timing-function: ease-in-out;
 }
+
+/* .sound2 .alarm-2{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
 
 .sound3 iframe{
 	animation-name: lift;
@@ -165,11 +176,21 @@ Sounds.
 	animation-timing-function: ease-out;
 }
 
+/* .sound3 .alarm-3{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
+
 .sound4{
 	animation-name: liftcolor;
 	animation-duration: 2s;
 	animation-timing-function: ease-out;
 }
+
+/* .sound4 .alarm-4{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
 
 .sound5 iframe{
 	animation-name: lift-2;
@@ -177,11 +198,21 @@ Sounds.
 	animation-timing-function: ease-out;
 }
 
+/* .sound5 .alarm-5{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
+
 .sound6{
 	animation-name: liftcolor-2;
 	animation-duration: 2s;
 	animation-timing-function: ease-out;
 }
+
+/* .sound6 .alarm-6{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
 
 .sound7 iframe{
 	animation-name: lift-3;
@@ -189,11 +220,21 @@ Sounds.
 	animation-timing-function: ease-out;
 }
 
+/* .sound7 .alarm-7{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
+
 .sound8{
 	animation-name: liftcolor-3;
 	animation-duration: 2s;
 	animation-timing-function: ease-out;
 }
+
+/* .sound7 .alarm-8{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+} */
 
 .sound9 iframe{
 	animation-name: grow;
@@ -209,10 +250,48 @@ Sounds.
 	overflow: hidden;
 }
 
+.sound10{
+	animation-name: bg-heavy-2;
+	animation-duration: 50s;
+	animation-timing-function: ease-out;
+	overflow: hidden;
+}
+
+.sound11 iframe{
+	animation: tring 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* .sound9 .beep-1{
+	transition: 0.5s;
+  animation: captionOndersteuning 1s ease;
+	animation-duration: 42s;
+	margin-left: -80px;
+} */
+
 iframe {
 	transition: 1s;
 	display: flex;
 	align-self: center;
+}
+
+.caption-ondersteuning{
+	display: flex;
+	place-self: center;
+	padding-right: 80px;
+}
+
+.caption-ondersteuning p {
+    opacity: 0;
+    z-index: 999;
+    font-family: "Brenner Sans";
+    font-weight: 600;
+    font-size: 19px;
+    color: pink;
+		margin-top: -50px;
+		position: absolute;
+		text-align: center;
 }
 
 .bg {
@@ -223,7 +302,8 @@ iframe {
   bottom: -50%;
   width: 200%;
   height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  /* background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0; */
+	background: transparent url('https://thomasstevens.nl/webtypografie/noise-1.png') repeat 0 0;
   background-repeat: repeat;
   animation: bg-animation .2s infinite;
   opacity: .9;
@@ -261,52 +341,153 @@ iframe {
 } */
 
 @keyframes bg-heavy {
-    0% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 100%, rgba(0,26,255,1) 100%);
-transition: 2s;
+    0% {
+background: rgb(22,0,181);
+background-image: url(img/circle.png);
+background-size: 130%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-    10% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 90%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+    96% {
+background: rgb(28,0,232);
+background-image: url(img/circle.png);
+background-size: 13%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-    20% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 80%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+99% {
+background: rgb(17,17,17);
+background-image: url(img/circle.png);
+background-size: 130%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-    30% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 70%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+		100% {
+background-color: #111;
+background-image: none;
 }
-    40% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 60%, rgba(0,26,255,1) 100%);
-transition: 2s;
 }
-    50% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 50%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+@keyframes bg-heavy-2 {
+0% {
+background: rgb(17,17,17);
+background-image: url(img/circle.png);
+background-size: 125%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-    60% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 40%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+/* lichtblauw */
+15% {
+background: rgb(72,138,130);
+background-image: url(img/circle.png);
+background-size: 105%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-    70% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 30%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+22% {
+background: rgb(17,17,17);
+background-image: url(img/circle.png);
+background-size: 115%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-    80% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 20%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+/* donkerblauw */
+30% {
+background: rgb(31,53,149);
+background-image: url(img/circle.png);
+background-size: 95%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-    90% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 10%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+38% {
+background: rgb(17,17,17);
+background-image: url(img/circle.png);
+background-size: 115%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-    97% { background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 1%, rgba(0,26,255,1) 100%);
-transition: 2s;
+
+/* oranje */
+45% {
+background: rgb(164,95,29);
+background-image: url(img/circle.png);
+background-size: 105%;
+background-repeat: no-repeat;
+background-position: center center;
 }
-		100% { background-color: #111;
-			transition: 2s;
+
+52% {
+background: rgb(17,17,17);
+background-image: url(img/circle.png);
+background-size: 123%;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+
+/* rood - duister */
+60% {
+background: rgb(232,10,0);
+background-image: url(img/circle.png);
+background-size: 75%;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+68% {
+background: rgb(17,17,17);
+background-image: url(img/circle.png);
+background-size: 123%;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+
+/* paars - duister */
+75% {
+background: rgb(123,0,179);
+background-image: url(img/circle.png);
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+83% {
+background: rgb(17,17,17);
+background-image: url(img/circle.png);
+background-size: 95%;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+
+/* donkerpaars - duister */
+90% {
+background: rgb(63,19,129);
+background-image: url(img/circle.png);
+background-size: 13%;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+98% {
+background: rgb(17,17,17);
+background-image: url(img/circle.png);
+background-size: 0%;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+100% {
+background-color: #111;
+background-image: none;
 }
 }
 
@@ -462,4 +643,41 @@ transition: 2s;
 		100%  {
 			transform: scale(1);
 		}
+}
+
+@keyframes captionOndersteuning {
+    0%  {
+			opacity: 1;
+		}
+
+		70%  {
+			opacity: 1;
+		}
+
+		100%  {
+			opacity: 0;
+		}
+}
+
+@keyframes tring {
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+		background-color: #111;
+  }
+
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+		background-color: lightblue;
+
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-20px, 0, 0);
+		background-color: lightblue;
+  }
+
+  40%, 60% {
+    transform: translate3d(20px, 0, 0);
+		background-color: #111;
+  }
 }
