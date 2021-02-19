@@ -8,7 +8,6 @@ Ontwerp een ondertiteling voor doven mensen, die ervoor zorgt dat je de film net
 
 
 ## Week 1
--
 
 ### Kennismaking met het vak
 -
