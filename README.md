@@ -29,16 +29,4 @@ Aanwezig: Thomas, Nikita, Lawrence, Lizzy
 
 Voor Darice heb ik een Google Document gemaakt gezamenlijk met m'n groepje zodat we allemaal toegang hadden en vragen konden verzinnen. (klik <a href"https://docs.google.com/document/d/1QWZ1uv-zJmzdqwg5r9imGMt38Kb2Z3HkdQINS_dq03A/edit">hier</a> voor de vragen)
 
-
-Feedback Moment
-Op vrijdag van de eerste week vond er een gesprek plaats met Vasilis en Darice. Hieruit kwam het volgende:
-
-Iconen mogen gebruikt worden naast font en kleur
-Niet effecten toepassen op basis van wat er gezegd wordt
-Darice weet wat geluiden zijn, ze is later in haar leven doof geworden
-Wat voor haar niet duidelijk is, is achtergrond geluiden. Deze worden meestal (goed) aangegeven in de closed captions
-Off screen stemmen graag in italic
-Ze wil wel ontspannend een film kunnen kijken, effecten moet niet te veel afleiden
-Graag alle geluiden meenemen
-Eerste aanpassing na feedback
-Ik had eerst wat uitgeprobeerd en een effect toegepast op een bepaalde woord in een zin. Dit heb ik na het feedbackgesprek met Vasilis weggehaald omdat dit overbodig is. De tekst kan al gelezen worden, het gaat juist om wat je niet kan horen of lezen.
+We kregen hier veel informatie uit, en de antwoorden staan ook in het document!
