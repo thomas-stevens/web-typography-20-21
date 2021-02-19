@@ -59,3 +59,32 @@ Ik heb deze aanpassingen direct verwerkt aangezien het niet hele grote waren van
 ## Week 3 (laatste week!)
 Als eerste heb ik een feedback gesprek gehad met Vasilis waarin ik voor de laatste keer mijn opdracht kon laten zien. Hieruit kreeg ik veel feedback waarmee ik veel kon namelijk:<br>
 - De gradient is een image en werkt niet smooth, probeer anders met scale te werken dan kan je het zelfde effect krijgen.
+- De ruis die je gebruikt is niet goed zichtbaar, maak het agressiever (oftewel doe het 10x erger)
+- Voor de rest coole effecten, probeer daar verder mee aan de gang te gaan!
+
+### Laatste aanpassingen
+Na deze feedback heb ik veel aanpassingen gemaakt. Ik heb als allereerst de eerste baseline afgemaakt.
+- Hiervoor heb ik alle keyframes gedetailleerd afgemaakt en met name de opbouwende pieptoon. Dit heb ik gedaan met een cirkel .png die van groot naar klein gaat met daarbij een hevige ruis op de achtergrond.
+- De volgende baseline heb ik ook doorgenomen en de stemmen uitgewerkt + een sound toevoegt van een bel. Ook stonden bepaalde sounds nog niet goed voor m'n gevoel dus die heb ik qua tijd aangepast.
+- Om allebei de scenes goed met elkaar over te laten komen, heb ik gebruik gemaakt van de zelfde stem fonts en ben ik veel aan de slag geweest met de achtergrond op een vergelijkbare maar andere manier te visualiseren.
+
+
+## Eindoplevering
+
+### Onderbouwing
+
+#### Achtergrond
+- Ruis zorgt ervoor dat het meer spanning mee brengt en aangezien het buiten begint, lijkt het net alsof het waait.
+- Kleur gebruik van de achtergrond laat ik switchen van zwart naar de sound die komt, dus een alarm of sirene is rood/blauw, etc.
+- Het opbouwende gedeelte laat ik van blauw naar zwart gaan om het spannend te houden, en voor jezelf de spanning te voelen met op het einde een mooie transition die de spanningsboog weer recht trekt.
+- In scene 2 laat ik dit effect terug komen maar dan net even anders. Ik speel hier meer met de kleuren, waarom? Nou bij deze ambiance hoor je verschillende duisterende klanktonen waardoor ik eerst licht begin -> door ga naar duister en steeds verder en verder.
+
+#### Frame
+- Het filmpje laat ik bewegen aan de hand van de sound die komt, dus een alarm die trilt. Maar je heb ook een geluid waarbij er iets aan komt zweven dus laat ik het frame opstijgen en zakken.
+- Bij het opbouwende piep gedeelte laat ik het een klein beetje groter worden om het meer te ondersteunen gecombineerd met de achtergrond.
+
+#### Lettertype
+Ik maak gebruik van de <b>Brenner</b> font, omdat je er veel meer mee kan dan het systeem font. Hiermee maak je onderscheid tussen de emoties van hoe de karakters dingen zeggen en de sfeer eromheen ook. Het gebruik hiervan zie je ook terug komen in mijn eindoplevering.
+- Mono voor de 'robot-achtige' stem, want het is emotieloos en een systematische font.
+- Sans voor de hoofdpersonage, want dat is de meest gebruikte font voor een film en het leest het lekkerste.
+- Condensed voor de agressieve man die iets kort maar krachtig zegt.
