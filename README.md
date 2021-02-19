@@ -7,6 +7,7 @@
 Ontwerp een ondertiteling voor doven mensen, die ervoor zorgt dat je de film net zo goed ervaart als mensen die wel kunnen horen. Zorg er dus voor dat je alles visueel in kaart brengt door middel van CSS.
 
 
+
 ## Week 1
 
 ### Kennismaking met het vak
@@ -34,6 +35,7 @@ Link naar document: https://docs.google.com/document/d/1QWZ1uv-zJmzdqwg5r9imGMt3
 We kregen hier veel informatie uit, en de antwoorden staan ook in het document!
 
 
+
 ## Week 2
 
 ### Personages & geluiden
@@ -56,6 +58,7 @@ Hier ben ik deze week veel mee bezig geweest door middel van de achtergrond met 
 Ik heb deze aanpassingen direct verwerkt aangezien het niet hele grote waren van Darice omdat ze concreet was in wat ze wou. De feedback van Vasilis kostte wat meer tijd, en ben ik verder mee aan de slag gegaan.
 
 
+
 ## Week 3 (laatste week!)
 Als eerste heb ik een feedback gesprek gehad met Vasilis waarin ik voor de laatste keer mijn opdracht kon laten zien. Hieruit kreeg ik veel feedback waarmee ik veel kon namelijk:<br>
 - De gradient is een image en werkt niet smooth, probeer anders met scale te werken dan kan je het zelfde effect krijgen.
@@ -67,6 +70,7 @@ Na deze feedback heb ik veel aanpassingen gemaakt. Ik heb als allereerst de eers
 - Hiervoor heb ik alle keyframes gedetailleerd afgemaakt en met name de opbouwende pieptoon. Dit heb ik gedaan met een cirkel .png die van groot naar klein gaat met daarbij een hevige ruis op de achtergrond.
 - De volgende baseline heb ik ook doorgenomen en de stemmen uitgewerkt + een sound toevoegt van een bel. Ook stonden bepaalde sounds nog niet goed voor m'n gevoel dus die heb ik qua tijd aangepast.
 - Om allebei de scenes goed met elkaar over te laten komen, heb ik gebruik gemaakt van de zelfde stem fonts en ben ik veel aan de slag geweest met de achtergrond op een vergelijkbare maar andere manier te visualiseren.
+
 
 
 ## Eindoplevering
@@ -88,3 +92,25 @@ Ik maak gebruik van de <b>Brenner</b> font, omdat je er veel meer mee kan dan he
 - Mono voor de 'robot-achtige' stem, want het is emotieloos en een systematische font.
 - Sans voor de hoofdpersonage, want dat is de meest gebruikte font voor een film en het leest het lekkerste.
 - Condensed voor de agressieve man die iets kort maar krachtig zegt.
+
+### Exclusive Design principes
+
+#### Ignore Conventies
+Ik heb goed onderscheid gemaakt met unieke CSS elementen en niet gedaan zoals je normaal zou verwachten, dit zie je ook terug komen in mijn opdracht.
+
+#### Prioritise Identity
+<b>De identiteit van Darice</b>
+- Concreet, geen gekke fratsen en niet te veel afleiding of beweging met het frame.
+- De verschillende karakters een andere kleur geven en wanneer er iets agressiefs gezegd wordt dat doe je CAPS LOCK of bold.
+
+<b>Mijn identiteit</b>
+- De gekke CSS achtergrond transitions zorgt ervoor dat het echt mijn eigen opdracht wordt. Ik laat hiermee zien dat ik uniek ben en alles visueel probeer op te lossen door middel van de achtergrond (daarom heb ik bijvoorbeeld ook geen gebruik gemaakt van [tussen haakjes zetten wat er gebeurd]).
+
+<b>De identiteit van de film</b>
+- Duister, space, toekomst. Dit probeer ik terug te laten komen door gebruik te maken van de duistere kleuren en effecten
+
+#### Study Situation
+Door middel van de CSS Tricks online heb ik veel verschillende dingen kunnen doen, en zoals ik hiervoor al zei, ik gooi mijn eigen ding er in en daarnaast tweek ik het aan de hand van feedback.
+
+#### Add nonsense
+De gekke CSS ruis op de achtergrond vind ik een mooi voorbeeld geweest van 'nonsence' het is cool maar nergens voor nodig.
